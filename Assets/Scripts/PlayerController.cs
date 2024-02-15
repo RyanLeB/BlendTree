@@ -41,11 +41,11 @@ public class PlayerController : MonoBehaviour
     public void HandleAnim()
     {
          
-        anim.SetFloat("MovementX", movement.x);
-        anim.SetFloat("MovementY", movement.y);
         
         if (movement != Vector2.zero) 
         {
+        anim.SetFloat("MovementX", movement.x);
+        anim.SetFloat("MovementY", movement.y);
         anim.SetBool("isMoving", true);
         }
         else
